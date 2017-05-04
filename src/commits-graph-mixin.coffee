@@ -1,4 +1,5 @@
 React = require 'react'
+ReactDOM = require 'react-dom'
 
 generateGraphData = require './generate-graph-data'
 
@@ -74,7 +75,7 @@ CommitsGraphMixin =
     @branchCount = null
 
   cursorPoint: (e) ->
-    svg = @getDOMNode()
+    svg = ReactDOM.findDOMNode(@)
     svgPoint = svg.createSVGPoint()
     svgPoint.x = e.clientX
     svgPoint.y = e.clientY

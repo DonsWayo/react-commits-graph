@@ -37,5 +37,4 @@ nbproject
 node_modules
 bower_components
 
-lib/
 examples/bundle.js
